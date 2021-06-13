@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>SIGN UP TO KIL</title>
+	<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+			</div>
+			<div class="social-icons">
+			<img src="fb.png">
+			<img src="tw.png">
+			<img src="gp.png">
+			</div>
+			<form id="signup" class="input-group">
+			<input type="text" class="input-field" placeholder="UserName"required>
+			<input type="email" class="input-field" placeholder="Email Id"required>
+			<input type="text" class="input-field" placeholder="Enter Password"required>
+			<input type="text" class="input-field" placeholder="Conform Password"required>
+			<input type="checkbox" class="check-box"><span>I Agree To The Terms & Conditions</span>
+			<button type="submit" class="submit-btn">Sign Up</button>
+			</form>
+			<form id="login" class="input-group">
+			<input type="text" class="input-field" placeholder="UserName"required>
+			<input type="text" class="input-field" placeholder="Enter Password"required>
+			<input type="checkbox" class="check-box"><span>Remember Password</span>
+			<button type="submit" class="submit-btn">Log In</button>
+			</form>
+		</div>
+
+	</div>
+
+	<script>
+		var x = document.getElementById("signup");
+		var y = document.getElementById("login");
+		var z = document.getElementById("btn");
+
+		function signup(){
+			x.style.left = "50";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+		function login(){
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+	</script>
+
+
+
+</body>
+</html>
